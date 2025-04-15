@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/daniil/projects/git/csharp_learning/ConsoleApp/ConsoleApp.csproj": {}
+  },
+  "projects": {
+    "/home/daniil/projects/git/csharp_learning/ConsoleApp/ConsoleApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daniil/projects/git/csharp_learning/ConsoleApp/ConsoleApp.csproj",
+        "projectName": "ConsoleApp",
+        "projectPath": "/home/daniil/projects/git/csharp_learning/ConsoleApp/ConsoleApp.csproj",
+        "packagesPath": "/home/daniil/.nuget/packages/",
+        "outputPath": "/home/daniil/projects/git/csharp_learning/ConsoleApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daniil/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/daniil/projects/git/csharp_learning/Tasks/Tasks.csproj": {
+                "projectPath": "/home/daniil/projects/git/csharp_learning/Tasks/Tasks.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/daniil/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/daniil/projects/git/csharp_learning/Tasks/Tasks.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daniil/projects/git/csharp_learning/Tasks/Tasks.csproj",
+        "projectName": "Tasks",
+        "projectPath": "/home/daniil/projects/git/csharp_learning/Tasks/Tasks.csproj",
+        "packagesPath": "/home/daniil/.nuget/packages/",
+        "outputPath": "/home/daniil/projects/git/csharp_learning/Tasks/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daniil/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/daniil/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

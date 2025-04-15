@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "g/JeljoVd/w=",
+  "success": true,
+  "projectFilePath": "/home/daniil/projects/git/csharp_learning/Tasks/Tasks.csproj",
+  "expectedPackageFiles": [
+    "/home/daniil/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/home/daniil/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

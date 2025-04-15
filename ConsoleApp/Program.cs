@@ -1,0 +1,3 @@
+﻿using Tasks;
+
+ArrayFinanceTasks.DemoAllTasks();
