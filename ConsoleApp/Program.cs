@@ -1,3 +1,4 @@
 ﻿using Tasks;
+using Tasks.ClassTasks.Task_01;
 
-ArrayFinanceTasks.DemoAllTasks();
+task1.Main();

@@ -1,6 +1,7 @@
 ﻿namespace Tasks;
 
 using System;
+using System.Diagnostics.Metrics;
 
 public static class ArrayFinanceTasks
 {
@@ -11,7 +12,30 @@ public static class ArrayFinanceTasks
     /// </summary> 
     public static decimal[] GenerateStockPrices(int days, decimal minPrice, decimal maxPrice)
     {
-        throw new NotImplementedException(); 
+        days = 3;
+
+        int size = days * 24;
+
+        int minValue = 100;
+        int maxValue = 200;
+
+        Random random = new Random();
+
+        decimal[] randNumb = new decimal[size];
+
+        for (int i = 0; i < size; i++)
+        {
+            randNumb[i] = random.Next(minValue, maxValue);
+        }
+
+        int counter = 0;
+        foreach (decimal number in randNumb)
+        {
+            counter++;
+            Console.WriteLine(counter + ". " + number);
+        }
+
+        return randNumb;
     }
 
     /// <summary>
@@ -22,7 +46,15 @@ public static class ArrayFinanceTasks
     /// </summary>
     public static decimal CalculatePortfolioValue(decimal[] amounts, decimal pricePerUnit)
     {
-        throw new NotImplementedException();
+
+        decimal amount = 0;
+        for (int i = 0; i < amounts.Length; i++)
+        {
+            amount += pricePerUnit * amounts[i];
+        }
+
+        Console.WriteLine(amount);
+        return amount;
     }
 
     /// <summary>
@@ -33,7 +65,16 @@ public static class ArrayFinanceTasks
     /// </summary> 
     public static decimal FindMaxPrice(decimal[] prices)
     {
-        throw new NotImplementedException();
+        decimal maxValue = 0;
+        for (int i = 0; i < prices.Length; i++)
+        {
+            if (prices[i] > maxValue)
+            {
+                maxValue = prices[i];
+            }
+        }
+        Console.WriteLine(maxValue);
+        return maxValue;
     }
 
     /// <summary>
@@ -44,18 +85,40 @@ public static class ArrayFinanceTasks
     /// </summary>
     public static double CalculateAverageYield(double[] yields)
     {
-        throw new NotImplementedException();
+        double yield = 0;
+        for (int i = 0; i < yields.Length; i++)
+        {
+            yield += yields[i] / yields.Length;
+        }
+
+        Console.WriteLine(Math.Round(yield, 2));
+        return yield;
     }
 
     /// <summary>
     /// Задача 5: Поиск дней с ростом цены ("бычьих" дней)
     /// Требуется: Найти индексы дней, когда цена была выше предыдущего дня
-    /// Пример: [100, 105, 103] → [1] (только второй день показал рост)
+    /// Пример: [100, 99, 107, 109, 103] → [1,2,3] (только второй день показал рост)
     /// Особенность: Первый день (индекс 0) никогда не может быть "бычьим"
     /// </summary>
     public static int[] FindBullDays(decimal[] prices)
     {
-        throw new NotImplementedException();
+        List<int> index = new();
+        decimal previousDay = 0;
+
+        for (int i = 0; i < prices.Length; i++)
+        {
+            if (prices[i] > previousDay)
+            {
+                previousDay = prices[i];
+                if (i != 0)
+                {
+                    index.Add(i);
+                    Console.WriteLine(i);
+                }
+            }
+        }
+        return index.ToArray();
     }
 
     /// <summary>
@@ -66,7 +129,18 @@ public static class ArrayFinanceTasks
     /// </summary>
     public static int CountLossDays(double[] dailyChanges)
     {
-        throw new NotImplementedException();
+        int days = 0;
+
+        for (int i = 0; i < dailyChanges.Length; i++)
+        {
+            if (dailyChanges[i] < 0)
+            {
+                days++;
+            }
+        }
+        Console.WriteLine(days);
+
+        return days;
     }
 
     /// <summary>
@@ -77,7 +151,16 @@ public static class ArrayFinanceTasks
     /// </summary>
     public static decimal[] ConvertBTCtoUSD(decimal[] btcAmounts, decimal exchangeRate)
     {
-        throw new NotImplementedException();
+        decimal usdPrice;
+        List<decimal> amount = new();
+        for (int i = 0;i < btcAmounts.Length; i++)
+        {
+            usdPrice = btcAmounts[i] * exchangeRate;
+            amount.Add(usdPrice);
+         Console.WriteLine(usdPrice);
+        }
+
+        return amount.ToArray();
     }
 
     /// <summary>
@@ -88,7 +171,14 @@ public static class ArrayFinanceTasks
     /// </summary> 
     public static void ApplyStopLoss(double[] priceChanges)
     {
-        throw new NotImplementedException();
+        for (int i = 0; i < priceChanges.Length; i++)
+        {
+            if (priceChanges[i] < 0)
+            {
+                priceChanges[i] = 0;
+            }
+            Console.WriteLine(priceChanges[i]);
+        }
     }
 
     /// <summary>
@@ -99,7 +189,16 @@ public static class ArrayFinanceTasks
     /// </summary> 
     public static int FindFirstPriceAbove(decimal[] prices, decimal limit)
     {
-        throw new NotImplementedException();
+        int index = 0;
+        for (int i = 0; i < prices.Length; i++)
+        {
+            if (prices[i] > limit)
+            {
+                index = i;
+                Console.WriteLine(i);
+            }
+        }
+        return index;
     }
 
     /// <summary>
@@ -108,10 +207,15 @@ public static class ArrayFinanceTasks
     /// Пример: [100, 200, 300] → [300, 100, 200]
     /// Применение: Имитация перехода к новой неделе в исторических данных
     /// </summary>
-    public static decimal[] ShiftWeeklyData(decimal[] prices)
-    {
-        throw new NotImplementedException();
-    }
+    //public static decimal[] ShiftWeeklyData(decimal[] prices)
+    //{
+    //    decimal lastElement = 0;
+
+    //    for (int i = 0; i < prices.Length; i++)
+    //    {
+    //        lastElement = prices.Length - i;
+    //    }
+    //}
 
     /// <summary>
     /// Пример использования всех методов с выводом в консоль
@@ -119,22 +223,32 @@ public static class ArrayFinanceTasks
     /// </summary>
     public static void DemoAllTasks()
     {
-        Console.WriteLine("=== Финансовый анализ ===");
-            
-        // 1. Генерация цен
-        var prices = GenerateStockPrices(5, 100, 200);
-        Console.WriteLine($"Сгенерированные цены: {string.Join(" | ", prices)}");
+        //Console.WriteLine("=== Финансовый анализ ===");
 
-        // 2. Расчет портфеля
-        decimal[] btcAmounts = { 0.5m, 2.1m };
-        Console.WriteLine($"Стоимость BTC: {CalculatePortfolioValue(btcAmounts, 45000m):C}");
+        //// 1. Генерация цен
+        //var prices = GenerateStockPrices(5, 100, 200);
+        //Console.WriteLine($"Сгенерированные цены: {string.Join(" | ", prices)}");
 
-        // 5. Бычьи дни
-        var examplePrices = new decimal[] { 100, 105, 103, 107 };
-        Console.WriteLine($"Дни роста: {string.Join(", ", FindBullDays(examplePrices))}");
+        //// 2. Расчет портфеля
+        //decimal[] btcAmounts = { 0.5m, 2.1m };
+        //Console.WriteLine($"Стоимость BTC: {CalculatePortfolioValue(btcAmounts, 45000m):C}");
 
-        // 10. Сдвиг данных
-        var shifted = ShiftWeeklyData(examplePrices);
-        Console.WriteLine($"После сдвига: {string.Join(" → ", shifted)}");
+        //// 5. Бычьи дни
+        //var examplePrices = new decimal[] { 100, 105, 103, 107 };
+        //Console.WriteLine($"Дни роста: {string.Join(", ", FindBullDays(examplePrices))}");
+
+        //// 10. Сдвиг данных
+        //var shifted = ShiftWeeklyData(examplePrices);
+        //Console.WriteLine($"После сдвига: {string.Join(" → ", shifted)}");
+        //GenerateStockPrices(3, 100, 200);
+        //CalculatePortfolioValue([0.5m,2] , 40000);
+        //FindMaxPrice([45000, 47500, 43000]);
+        //CalculateAverageYield([5.0, 4.5, 6.2]);
+        //FindBullDays([100, 99, 107, 109, 103]);
+        //CountLossDays([-2.5, 1.3, -4.7]);
+        //ConvertBTCtoUSD([0.1m, 0.5m], 45000);
+        //ApplyStopLoss([-2.5, 1.3, -4.7]);
+        //FindFirstPriceAbove([48000, 49000, 51000], 50000);
+
     }
 }

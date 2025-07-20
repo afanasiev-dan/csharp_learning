@@ -27,32 +27,40 @@
     ]
   },
   "packageFolders": {
-    "/home/daniil/.nuget/packages/": {}
+    "C:\\Users\\afana\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/daniil/projects/git/csharp_learning/ConsoleApp/ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\ConsoleApp\\ConsoleApp.csproj",
       "projectName": "ConsoleApp",
-      "projectPath": "/home/daniil/projects/git/csharp_learning/ConsoleApp/ConsoleApp.csproj",
-      "packagesPath": "/home/daniil/.nuget/packages/",
-      "outputPath": "/home/daniil/projects/git/csharp_learning/ConsoleApp/obj/",
+      "projectPath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\ConsoleApp\\ConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\afana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/daniil/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\afana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/daniil/projects/git/csharp_learning/Tasks/Tasks.csproj": {
-              "projectPath": "/home/daniil/projects/git/csharp_learning/Tasks/Tasks.csproj"
+            "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tasks\\Tasks.csproj": {
+              "projectPath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tasks\\Tasks.csproj"
             }
           }
         }
@@ -65,7 +73,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
       "SdkAnalysisLevel": "9.0.100"
     },
@@ -83,26 +91,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[8.0.11, 8.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/daniil/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

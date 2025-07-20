@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AJV1J7A0UPo=",
+  "dgSpecHash": "CCxI7kVdb+c=",
   "success": true,
-  "projectFilePath": "/home/daniil/projects/git/csharp_learning/ConsoleApp/ConsoleApp.csproj",
-  "expectedPackageFiles": [
-    "/home/daniil/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
-    "/home/daniil/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
-    "/home/daniil/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.11/microsoft.netcore.app.host.linux-x64.8.0.11.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\ConsoleApp\\ConsoleApp.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
