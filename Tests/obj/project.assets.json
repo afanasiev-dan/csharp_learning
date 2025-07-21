@@ -988,11 +988,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tests\\Tests.csproj",
+      "projectUniqueName": "D:\\git\\csharp_learning\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tests\\Tests.csproj",
+      "projectPath": "D:\\git\\csharp_learning\\Tests\\Tests.csproj",
       "packagesPath": "C:\\Users\\afana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tests\\obj\\",
+      "outputPath": "D:\\git\\csharp_learning\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

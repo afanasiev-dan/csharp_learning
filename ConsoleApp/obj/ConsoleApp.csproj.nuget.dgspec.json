@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\ConsoleApp\\ConsoleApp.csproj": {}
+    "D:\\git\\csharp_learning\\ConsoleApp\\ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\ConsoleApp\\ConsoleApp.csproj": {
+    "D:\\git\\csharp_learning\\ConsoleApp\\ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\ConsoleApp\\ConsoleApp.csproj",
+        "projectUniqueName": "D:\\git\\csharp_learning\\ConsoleApp\\ConsoleApp.csproj",
         "projectName": "ConsoleApp",
-        "projectPath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\ConsoleApp\\ConsoleApp.csproj",
+        "projectPath": "D:\\git\\csharp_learning\\ConsoleApp\\ConsoleApp.csproj",
         "packagesPath": "C:\\Users\\afana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\ConsoleApp\\obj\\",
+        "outputPath": "D:\\git\\csharp_learning\\ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tasks\\Tasks.csproj": {
-                "projectPath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tasks\\Tasks.csproj"
+              "D:\\git\\csharp_learning\\Tasks\\Tasks.csproj": {
+                "projectPath": "D:\\git\\csharp_learning\\Tasks\\Tasks.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tasks\\Tasks.csproj": {
+    "D:\\git\\csharp_learning\\Tasks\\Tasks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tasks\\Tasks.csproj",
+        "projectUniqueName": "D:\\git\\csharp_learning\\Tasks\\Tasks.csproj",
         "projectName": "Tasks",
-        "projectPath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tasks\\Tasks.csproj",
+        "projectPath": "D:\\git\\csharp_learning\\Tasks\\Tasks.csproj",
         "packagesPath": "C:\\Users\\afana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tasks\\obj\\",
+        "outputPath": "D:\\git\\csharp_learning\\Tasks\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3pQqROGBnxM=",
+  "dgSpecHash": "2Op7tfP0S68=",
   "success": true,
-  "projectFilePath": "C:\\Users\\afana\\OneDrive\\Документы\\GitHub\\csharp_learning\\Tests\\Tests.csproj",
+  "projectFilePath": "D:\\git\\csharp_learning\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\afana\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\afana\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
